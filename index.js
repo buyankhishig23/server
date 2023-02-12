@@ -37,7 +37,7 @@ app.get(
     res.status(200).send({ success: true, data: "success" });
   })
 );
-app.use("/api/v1/products", productRoutes);
+app.use("/api/v1/product", productRoutes);
 app.use("/api/v1/promos", promoRoutes);
 app.use(errorHandler);
 //port, listen
